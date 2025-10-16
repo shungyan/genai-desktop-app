@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package chat;
+
+service ChatService {
+  rpc SendMessage (ChatRequest) returns (ChatReply);
+  rpc UploadVideo (VideoRequest) returns (VideoReply);
+  rpc GetHistory (Empty) returns (ChatHistory);
+}
+
+message Empty {}
+
+message ChatMessage {
+  string sender = 1;
+  string message = 2;
+  string created_at = 3;
+}
+
+message ChatHistory {
+  repeated ChatMessage messages = 1;
+}
+
+message ChatRequest {
+  string sender = 1;
+  string message = 2;
+}
+
+message ChatReply {
+  string reply = 1;
+}
+
+message VideoRequest {
+  bytes file_content = 1;
+  string filename = 2;
+}
+
+message VideoReply {
+  string message = 1;
+}
