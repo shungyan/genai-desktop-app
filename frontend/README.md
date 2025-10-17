@@ -1,5 +1,5 @@
 ## Install dependencies
-- ```
+```
   sudo apt update
   sudo apt install -y \
     libgtk-3-dev \
@@ -12,8 +12,8 @@
     libayatana-appindicator3-dev \
     librsvg2-dev
   ```
--
-- ## 🧩 1. Create and Set Up React + Vite App
+
+ ## 🧩 1. Create and Set Up React + Vite App
   
   ```
   npm create vite@latest my-tauri-app -- --template react
@@ -34,7 +34,7 @@
   Press **Ctrl + C** to stop it.
   
   ---
-- ## 🦀 2. Install Rust (for Tauri backend)
+ ## 🦀 2. Install Rust (for Tauri backend)
   
   If you don’t have it yet, install Rust:
   
@@ -52,7 +52,7 @@
   If it prints a version (e.g., `cargo 1.81.0`), you’re good.
   
   ---
-- ## ⚙️ 3. Add Tauri
+ ## ⚙️ 3. Add Tauri
   
   Now, still inside your `my-tauri-app` folder:
   
@@ -73,7 +73,7 @@
   ```
   
   ---
-- ## 🧰 4. Verify  `package.json`  Scripts
+ ## 🧰 4. Verify  `package.json`  Scripts
   
   Open your `package.json`, and make sure the `"scripts"` section looks like this:
   
@@ -89,7 +89,7 @@
   If `"tauri": "tauri"` is missing, add it manually.
   
   ---
-- ## 🪟 5. Run Your Tauri App in Dev Mode
+ ## 🪟 5. Run Your Tauri App in Dev Mode
   
   Now start Tauri:
   
@@ -102,7 +102,7 @@
 - Open it in a **native Tauri window**
   
   ---
-- ## 🧠 6. Folder Structure (for reference)
+ ## 🧠 6. Folder Structure (for reference)
   
   Your project now looks like this:
   
@@ -116,7 +116,7 @@
   ```
   
   ---
-- ## ✅ 7. Build Native Executable (Optional)
+ ## ✅ 7. Build Native Executable (Optional)
   
   When you’re ready to make a standalone Linux app:
   
