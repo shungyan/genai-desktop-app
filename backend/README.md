@@ -6,7 +6,7 @@ cd grpc
 ```
 
 ---
-- # 🧩 Step 2: uv pip install dependencies 
+# 🧩 Step 2: uv pip install dependencies 
   
   If you’re using **uv** (recommended):
   
@@ -14,7 +14,7 @@ cd grpc
   uv venv
   uv pip install grpcio grpcio-tools uvicorn fastapi
   ```
-- # 📜 Step 3: Create your  `.proto`  file
+# 📜 Step 3: Create your  `.proto`  file
   
   In the root folder, create:
   
@@ -48,12 +48,12 @@ cd grpc
   This defines your API “contract” — one RPC method called `SendMessage()`.
   
   ---
-- # ⚙️ Step 4: Generate the Python gRPC code
+# ⚙️ Step 4: Generate the Python gRPC code
   
   Run this:
   
   ```
-  python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. chat.proto
+  uv run python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. chat.proto
   ```
   
   ✅ This creates:
@@ -64,7 +64,7 @@ cd grpc
   ```
   
   ---
-- # 🧠 Step 5: Create the gRPC  **server**
+# 🧠 Step 5: Create the gRPC  **server**
   
   File: `server.py`
   
@@ -97,47 +97,7 @@ cd grpc
   ```
   
   ---
-- # 💬 Step 6: Create the gRPC  **client**
-  
-  File: `client.py`
-  
-  ```
-  import grpc
-  import chat_pb2, chat_pb2_grpc
-  
-  def run():
-    channel = grpc.insecure_channel("localhost:50051")
-    stub = chat_pb2_grpc.ChatServiceStub(channel)
-  
-    response = stub.SendMessage(chat_pb2.ChatRequest(message="Hello from client!"))
-    print("Server replied:", response.reply)
-  
-  if __name__ == "__main__":
-    run()
-  ```
-  
-  Run it in another terminal:
-  
-  ```
-  python client.py
-  ```
-  
-  ✅ Output:
-  
-  ```
-  Server replied: You said: Hello from client!
-  ```
-  
-  and on the server side:
-  
-  ```
-  User said: Hello from client!
-  ```
-  
-  Boom 💥 — your first working gRPC connection!
-  
-  ---
-- # 🧩 Step 7 (optional): Connect to FastAPI
+# 🧩 Step 6: Connect to FastAPI
   
   You can now use this same gRPC client inside a FastAPI endpoint, like:
   
@@ -168,6 +128,5 @@ cd grpc
   ├── chat_pb2.py
   ├── chat_pb2_grpc.py
   ├── server.py
-  ├── client.py
-  └── (optional) fastapi_gateway.py
+  └── gateway.py
   ```
