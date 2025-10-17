@@ -28,6 +28,16 @@ You are summarizer that summarizes chat history and save it as PDF.
 3. Always respond that summary is saved in the returned PDF path.
 """
 
+TRANSCRIBE_INSTRUCTION="""
+You transcribe video.
+
+**Sequence**
+1. Run "check_video"
+2. If the tool respond video not found, ask user to upload video
+3. Run "transcribe"
+4. Don't run "summarize_chat_history" after running "transcribe"
+"""
+
 COORDINATOR_INSTRUCTION = """
 You are coordinator, always find the right tool to use based on user request. 
 """

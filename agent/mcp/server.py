@@ -304,6 +304,27 @@ def save_ppt(filename):
         return "No presentation found to save."
 
 
+# transcribe
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@mcp.tool()
+def transcribe():
+    """
+    Uploads a file to the /transcribe endpoint and returns parsed JSON response.
+    """
+    file_path="../../backend/uploaded_video.mp4"
+    url="http://localhost:4896/transcribe"
+    timeout=120
+    file_path = Path(file_path)
+    if not file_path.exists():
+        raise FileNotFoundError(f"{file_path} not found")
+
+    with file_path.open("rb") as f:
+        files = {"file": (file_path.name, f, "application/octet-stream")}
+        resp = requests.post(url, files=files, timeout=timeout)
+        resp.raise_for_status()
+        return resp.json()
+
+
 # generate ppt template
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

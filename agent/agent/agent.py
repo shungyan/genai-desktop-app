@@ -57,6 +57,21 @@ ppt_slides_agent = LlmAgent(
     ],
 )
 
+transcribe_agent = LlmAgent(
+    model=LiteLlm(model="ollama_chat/qwen3:8b"),
+    name="transcribe_agent",
+    description="An agent transcribe the video",
+    instruction=prompts.TRANSCRIBE_INSTRUCTION,
+    tools=[
+        MCPToolset(
+            connection_params=StreamableHTTPServerParams(
+                url="http://localhost:6969/mcp",
+            ),
+            tool_filter=["transcribe","check_video"],
+        ),
+    ],
+)
+
 # template_agent = LlmAgent(
 #     model=LiteLlm(model="ollama_chat/qwen3:8b"),
 #     name="ppt_template_agent",
@@ -82,6 +97,7 @@ root_agent = LlmAgent(
         summarizer,
         video_analyst,
         ppt_slides_agent,
+        transcribe_agent,
         # template_agent,
     ],
 )
