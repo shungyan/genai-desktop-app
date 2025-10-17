@@ -3,3 +3,4 @@ frontend/src-tauri/gen/
 __pycache__
 .venv
 .env
+*.mp4

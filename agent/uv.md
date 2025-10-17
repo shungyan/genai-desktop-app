@@ -1,0 +1,1 @@
+uv pip install google-adk litellm opencv-python python-pptx reportlab

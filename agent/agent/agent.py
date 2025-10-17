@@ -25,14 +25,14 @@ summarizer = LlmAgent(
 video_analyst = LlmAgent(
     model=LiteLlm(model="ollama_chat/qwen3:8b"),
     name="video_analyst",
-    description="An agent that can analyze video",
-    # instruction=prompts.INSTRUCTION,
+    description="An agent that can analyze video, don't ask user to upload video",
+    instruction=prompts.VIDEO_INSTRUCTION,
     tools=[
         MCPToolset(
             connection_params=StreamableHTTPServerParams(
                 url="http://localhost:6969/mcp",
             ),
-            tool_filter=["analyze_video"],
+            tool_filter=["analyze_video","check_video"],
         ),
     ],
 )
@@ -48,7 +48,6 @@ ppt_slides_agent = LlmAgent(
                 url="http://localhost:6969/mcp",
             ),
             tool_filter=[
-                # "generate_ppt_template",
                 "create_ppt",
                 "add_slide",
                 "write_text",
@@ -77,6 +76,7 @@ root_agent = LlmAgent(
     name="Coordinator",
     model=LiteLlm(model="ollama_chat/qwen3:8b"),
     description="I coordinate greetings and tasks.",
+    instruction=prompts.COORDINATOR_INSTRUCTION,
     sub_agents=[  # Assign sub_agents here
         greeter,
         summarizer,

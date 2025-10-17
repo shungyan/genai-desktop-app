@@ -46,13 +46,22 @@ def extract_key_frame(video_path, interval_sec=3, max_frames=20):
     cap.release()
     return frames_b64
 
+@mcp.tool()
+def check_video():
+    video_path = "../../backend/uploaded_video.mp4"
 
+    if os.path.exists(video_path):
+        return("File exists!")
+    else:
+        return("File not found!")
 
 
 @mcp.tool()
 def analyze_video():
+    """ Analyze video from video path provided below, which is uploaded by user"""
     # Extract the first frame (you can extend this to multiple frames)
-    video_path = "uploaded_video.mp4"
+    video_path = "../../backend/uploaded_video.mp4"
+
     print("extracting....")
     image_b64 = extract_key_frame(video_path)
     print("done")

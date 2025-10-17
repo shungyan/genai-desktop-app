@@ -15,6 +15,14 @@ def create_session():
     else:
         print(f"Failed to create session. Status code: {response.status_code}, response: {response.text}")
 
+def extract_texts(data):
+    out = []
+    for entry in data:
+        for part in entry.get("content", {}).get("parts", []):
+            if isinstance(part, dict) and "text" in part:
+                out.append(part["text"])
+    return " ".join(out)
+
 
 def generate_llm_reply(user_message):
     url= "http://localhost:8000/run"
@@ -61,21 +69,26 @@ class ChatService(chat_pb2_grpc.ChatServiceServicer):
 
         # Generate LLM reply
         llm_reply = generate_llm_reply(request.message)
+
         # Extract only the text part safely
         try:
-            llm_reply_text = llm_reply[0]["content"]["parts"][0]["text"]
+            llm_reply_text = extract_texts(llm_reply)
+            #llm_reply_text = llm_reply[0]["content"]["parts"][0]["text"]
         except (KeyError, IndexError, TypeError):
             llm_reply_text = str(llm_reply)
 
         # Save bot reply
         cursor.execute(
             "INSERT INTO conversations (sender, message) VALUES (%s, %s)",
-            ("bot", llm_reply_text)
+            ("llm", llm_reply_text)
         )
         conn.commit()
 
+        print(llm_reply)
+        print(llm_reply_text)
+
         # Return ChatReply to FastAPI
-        return chat_pb2.ChatReply(reply=llm_reply_text)
+        return chat_pb2.ChatReply(reply=str(llm_reply_text))
 
     def UploadVideo(self, request, context):
         filename = "uploaded_video.mp4"

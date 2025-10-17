@@ -1,0 +1,1 @@
+uv pip install grpcio grpcio-tools psycopg2-binary requests uvicorn fastapi python-multipart
