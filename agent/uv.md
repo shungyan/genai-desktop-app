@@ -1,1 +1,1 @@
-uv pip install google-adk litellm opencv-python python-pptx reportlab
+uv pip install google-adk litellm opencv-python python-pptx reportlab psycopg2-binary

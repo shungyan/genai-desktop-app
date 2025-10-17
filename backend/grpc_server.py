@@ -77,7 +77,7 @@ class ChatService(chat_pb2_grpc.ChatServiceServicer):
         except (KeyError, IndexError, TypeError):
             llm_reply_text = str(llm_reply)
 
-        # Save bot reply
+        # Save llm reply
         cursor.execute(
             "INSERT INTO conversations (sender, message) VALUES (%s, %s)",
             ("llm", llm_reply_text)

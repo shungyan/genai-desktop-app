@@ -19,6 +19,15 @@ You are Video analyst, analyze uploaded video.
 4. Don't run "summarize_chat_history" after running "analyze_video"
 """
 
+SUMMARIZER_INSTRUCTION= """
+You are summarizer that summarizes chat history and save it as PDF.
+
+**Sequence**
+1. Run "fetch_chat_history". 
+2. If chat history is fetch, run "summarize_chat_history"
+3. Always respond that summary is saved in the returned PDF path.
+"""
+
 COORDINATOR_INSTRUCTION = """
 You are coordinator, always find the right tool to use based on user request. 
 """

@@ -11,13 +11,13 @@ summarizer = LlmAgent(
     model=LiteLlm(model="ollama_chat/qwen3:8b"),
     name="summarizer",
     description="An agent that can summarize chat history",
-    # instruction=prompts.INSTRUCTION,
+    instruction=prompts.SUMMARIZER_INSTRUCTION,
     tools=[
         MCPToolset(
             connection_params=StreamableHTTPServerParams(
                 url="http://localhost:6969/mcp",
             ),
-            tool_filter=["summarize_chat_history"],
+            tool_filter=["summarize_chat_history","fetch_chat_history"],
         ),
     ],
 )
