@@ -70,7 +70,7 @@ function App() {
       });
 
       const data = await res.json();
-      setMessages(prev => [...prev, { text: data.reply, sender: "bot" }]);
+      setMessages(prev => [...prev, { text: data.reply, sender: "llm" }]);
     } catch (err) {
       console.error(err);
     }
