@@ -322,63 +322,65 @@ def transcribe():
         files = {"file": (file_path.name, f, "application/octet-stream")}
         resp = requests.post(url, files=files, timeout=timeout)
         resp.raise_for_status()
-        return resp.json()
+        result=resp.json()
+
+        with open("transcript.txt", "w", encoding="utf-8") as file:
+            file.write(result.get("transcription", str(result)))
+        return result
 
 
 # generate ppt template
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# Configuration
-# OLLAMA_HOST = "http://localhost:11434"  # change if running on another host/IP
-# MODEL = "qwen3:8b"  # or whatever model you want (e.g., llama3, mistral, etc.)
+OLLAMA_HOST = "http://localhost:11434"  # change if running on another host/IP
+MODEL = "qwen3:8b"  # or whatever model you want (e.g., llama3, mistral, etc.)
 
 
-# def read_transcript(file_path: str) -> str:
-#     path = Path(file_path)
-#     if not path.exists():
-#         print(f"File not found: {file_path}")
-#         sys.exit(1)
-#     return path.read_text(encoding="utf-8").strip()
+def read_transcript(file_path: str) -> str:
+    path = Path(file_path)
+    if not path.exists():
+        print(f"File not found: {file_path}")
+        sys.exit(1)
+    return path.read_text(encoding="utf-8").strip()
 
 
-# def save_to_file(content: str) -> str:
-#     output_file = "ppt_template.txt"
-#     Path(output_file).write_text(content, encoding="utf-8")
-#     return output_file
+def save_to_file(content: str) -> str:
+    output_file = "ppt_template.txt"
+    Path(output_file).write_text(content, encoding="utf-8")
+    return output_file
 
 
-# @mcp.tool()
-# def generate_ppt_template():
-#     transcript = read_transcript("transcript.txt")
+@mcp.tool()
+def generate_guideline():
+    transcript = read_transcript("transcript.txt")
 
-#     # Prompt template
-#     prompt = f"""
-#     You are an AI assistant that converts a transcript into PowerPoint slide templates.
+    # Prompt template
+    prompt = f"""
+    You are an AI assistant that converts a transcript into PowerPoint slide templates.
 
-#     Rules:
-#     - Each slide begins with "slide X:"
-#     - Slide 1 = title only
-#     - Slide 2 = title and content
-#     - Last slide = summary
+    Rules:
+    - Each slide begins with "slide X:"
+    - Slide 1 = title only
+    - Slide 2 = title and content
+    - Last slide = summary
 
-#     Convert the following transcript into slides:
+    Convert the following transcript into slides:
 
-#     {transcript}
-#     """
+    {transcript}
+    """
 
-#     # Send request to Ollama API
-#     response = requests.post(
-#         f"{OLLAMA_HOST}/api/generate",
-#         json={"model": MODEL, "prompt": prompt, "stream": False},
-#     )
+    # Send request to Ollama API
+    response = requests.post(
+        f"{OLLAMA_HOST}/api/generate",
+        json={"model": MODEL, "prompt": prompt, "stream": False},
+    )
 
-#     if response.status_code != 200:
-#         raise RuntimeError(f"Ollama error {response.status_code}: {response.text}")
+    if response.status_code != 200:
+        raise RuntimeError(f"Ollama error {response.status_code}: {response.text}")
 
-#     data = response.json()
-#     template = data.get("response", "").strip()
-#     output_path = save_to_file(template)
-#     return template, output_path
+    data = response.json()
+    template = data.get("response", "").strip()
+    output_path = save_to_file(template)
+    return template
 
 
 if __name__ == "__main__":

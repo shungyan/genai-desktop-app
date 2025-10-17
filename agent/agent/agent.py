@@ -37,26 +37,6 @@ video_analyst = LlmAgent(
     ],
 )
 
-ppt_slides_agent = LlmAgent(
-    model=LiteLlm(model="ollama_chat/qwen3:8b"),
-    name="ppt_slides_agent",
-    description="An agent that can create ppt slides based on key points, only run the sequence once",
-    instruction=prompts.PPT_INSTRUCTION,
-    tools=[
-        MCPToolset(
-            connection_params=StreamableHTTPServerParams(
-                url="http://localhost:6969/mcp",
-            ),
-            tool_filter=[
-                "create_ppt",
-                "add_slide",
-                "write_text",
-                "save_ppt",
-            ],
-        ),
-    ],
-)
-
 transcribe_agent = LlmAgent(
     model=LiteLlm(model="ollama_chat/qwen3:8b"),
     name="transcribe_agent",
@@ -72,19 +52,27 @@ transcribe_agent = LlmAgent(
     ],
 )
 
-# template_agent = LlmAgent(
-#     model=LiteLlm(model="ollama_chat/qwen3:8b"),
-#     name="ppt_template_agent",
-#     description="An agent that can create template file based on transcript",
-#     tools=[
-#         MCPToolset(
-#             connection_params=StreamableHTTPServerParams(
-#                 url="http://localhost:6969/mcp",
-#             ),
-#             tool_filter=["generate_ppt_template"],
-#         ),
-#     ],
-# )
+ppt_slides_agent = LlmAgent(
+    model=LiteLlm(model="ollama_chat/qwen3:8b"),
+    name="ppt_slides_agent",
+    description="An agent that can create ppt slides based on key points, only run the sequence once",
+    instruction=prompts.PPT_INSTRUCTION,
+    tools=[
+        MCPToolset(
+            connection_params=StreamableHTTPServerParams(
+                url="http://localhost:6969/mcp",
+            ),
+            tool_filter=[
+                "create_ppt",
+                "add_slide",
+                "write_text",
+                "save_ppt",
+                "generate_guideline",
+            ],
+        ),
+    ],
+)
+
 
 # Create parent agent and assign children via sub_agents
 root_agent = LlmAgent(
@@ -96,8 +84,7 @@ root_agent = LlmAgent(
         greeter,
         summarizer,
         video_analyst,
-        ppt_slides_agent,
         transcribe_agent,
-        # template_agent,
+        ppt_slides_agent,
     ],
 )

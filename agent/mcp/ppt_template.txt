@@ -1,39 +1,15 @@
 slide 1:  
-**Global AI Investment and Innovation Trends**  
+**Global AI Spending and Innovation**  
 
 slide 2:  
-**Title:** Global AI Investment and Innovation Trends  
-**Content:**  
-- Global spending on AI projected to reach **$1.5 trillion this year**, potentially **$2 trillion by 2026**.  
-- **Jensen Wong**, CEO of **Nvidia** (market cap: **$4.5 trillion**, world's most valuable company), discusses AI industry dynamics.  
+**Global AI Spending and Innovation**  
+- Global spending on AI projected to reach **$1.5 trillion** this year.  
+- Could exceed **$2 trillion** by 2026.  
+- Jensen Wong, CEO of Invidia (market cap: **$4.5 trillion**), joins the discussion.  
+- Host: "It is a pleasure to have you here on set. So happy to be here."  
 
 slide 3:  
-**Title:** Nvidia’s Strategic Partnerships with OpenAI  
-**Content:**  
-- **First partnership**: Nvidia and OpenAI (via Azure, Microsoft, and OCI).  
-- **Key milestone**: In 2016, Nvidia delivered the **first AI supercomputer (DGX One)** to OpenAI, a nonprofit startup.  
-- **New direct partnership**: Nvidia now sells **entire AI infrastructure systems** directly to OpenAI, enabling self-hosted solutions.  
-
-slide 4:  
-**Title:** Nvidia’s Unique AI Infrastructure Offerings  
-**Content:**  
-- Nvidia provides **end-to-end AI infrastructure**:  
-  - CPUs, GPUs, networking chips, switches.  
-  - Software stacks for AI development.  
-- **Differentiation**: Only company building **complete AI infrastructure** from hardware to software.  
-
-slide 5:  
-**Title:** Industry Dynamics and Future Outlook  
-**Content:**  
-- **AMD-OpenAI deal**: Competes with Nvidia’s approach.  
-- **Nvidia’s focus**: Scaling AI infrastructure for **hyperscalers** and self-hosted systems.  
-- **Industry growth**: Rapid expansion of AI-driven technologies and partnerships.  
-
-slide 6:  
 **Summary**  
-- **Key Takeaways**:  
-  1. AI investment surges to **$1.5T+** by 2026.  
-  2. Nvidia leads with **end-to-end AI infrastructure** (hardware + software).  
-  3. Direct partnerships with OpenAI enable **self-hosted solutions**.  
-  4. Competitive landscape includes deals with AMD and OpenAI.  
-  5. Nvidia’s role as a **key innovator** in AI-driven tech.
+- AI investment surge: **$1.5T (2024)** → **$2T (2026)**.  
+- Invidia, led by Jensen Wong, is the **world’s most valuable company**.  
+- Conversation highlights innovation and industry growth.
