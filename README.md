@@ -1,8 +1,6 @@
 # GenAI Desktop Application
 
-A **fully local AI desktop application** capable of analyzing and querying **short video files**.  
-The application can **extract and summarize content**, **generate reports (PDF/PPT)**, and  
-**operate entirely offline** using **local AI models** and **MCP servers**.
+A **fully local AI desktop application** capable of analyzing and querying **short video files**. The application can **extract and summarize content**, **generate reports (PDF/PPT)**, and  **operate entirely offline** using **local AI models** and **MCP servers**.
 
 ---
 
