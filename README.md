@@ -59,7 +59,7 @@ A **fully local AI desktop application** capable of analyzing and querying **sho
    - Add asynchronous job handling for large AI tasks (video processing, PPT generation).
 
 3. **AI/Model Enhancements**
-   - Upgrade hardware to support **OpenVINO-powered LLMs** or deploy them on a **remote inference server**.  
+   - Upgrade hardware to support **OpenVINO-powered LLMs**.
    - Improve PowerPoint generation logic for more structured and reliable outputs.
 
 4. **Scalability**
@@ -153,5 +153,11 @@ genai-desktop/
 - **Frontend:** Tauri + React  
 - **Backend:** FastAPI + gRPC  
 - **AI Models:** OpenVINO, Whisper  
-- **Environment:** uv (Python), Node.js  
+- **Environment:** uv (Python) 
 - **Platform:** Intel GPU acceleration (Meteor Lake and above)
+
+## Disclaimer
+
+Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
+As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU to ensure functional verification of the AI components.
+
