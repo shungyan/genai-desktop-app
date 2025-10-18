@@ -4,6 +4,12 @@ A **fully local AI desktop application** capable of analyzing and querying **sho
 
 ---
 
+## Architecture
+
+![alt text](image.png)
+
+---
+
 ## Prerequisites
 
 - **Operating System:** Ubuntu 22.04 or 24.10  
