@@ -1,0 +1,115 @@
+/home/sysadmin/genai-desktop-app/agent/.venv/lib/python3.11/site-packages/google/adk/cli/fast_api.py:179: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/home/sysadmin/genai-desktop-app/agent/.venv/lib/python3.11/site-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [4749]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server2025-10-18 13:15:30,073 - INFO - envs.py:54 - No .env file found for agent
+2025-10-18 13:15:30,073 - INFO - envs.py:54 - No .env file found for agent
+2025-10-18 13:15:31,352 - INFO - agent_loader.py:126 - Found root_agent in agent.agent
+/home/sysadmin/genai-desktop-app/agent/.venv/lib/python3.11/site-packages/google/adk/cli/adk_web_server.py:475: UserWarning: [EXPERIMENTAL] App: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  agentic_app = App(
+[92m13:15:31 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:31,359 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+[92m13:15:35 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:35,576 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:36,934 - INFO - adk_web_server.py:1364 - Generated 3 events in agent run
+INFO:     127.0.0.1:42306 - "POST /run HTTP/1.1" 200 OK
+[92m13:15:48 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:48,881 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:50,771 - INFO - streamable_http.py:134 - Received session ID: 1e7235192c424065a48cc9231507ad68
+2025-10-18 13:15:50,773 - INFO - streamable_http.py:146 - Negotiated protocol version: 2025-06-18
+/home/sysadmin/genai-desktop-app/agent/.venv/lib/python3.11/site-packages/google/adk/tools/mcp_tool/mcp_tool.py:88: UserWarning: [EXPERIMENTAL] BaseAuthenticatedTool: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__(
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:50,781 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+[92m13:15:50 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:50,784 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,885 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:56,907 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+[92m13:15:56 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:56,908 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:15:59,316 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:05,126 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+[92m13:16:05 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:16:05,127 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,386 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,387 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,387 - WARNING - base_authenticated_tool.py:72 - auth_config or auth_config.auth_scheme is missing. Will skip authentication.Using FunctionTool instead if authentication is not required.
+2025-10-18 13:16:09,387 - INFO - adk_web_server.py:1364 - Generated 7 events in agent run
+INFO:     127.0.0.1:40704 - "POST /run HTTP/1.1" 200 OK

@@ -1,0 +1,18 @@
+
+> my-tauri-app@0.0.0 tauri
+> tauri dev
+
+     Running BeforeDevCommand (`npm run dev`)
+
+> my-tauri-app@0.0.0 dev
+> vite
+
+
+  VITE v7.1.9  ready in 209 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+     Running DevCommand (`cargo  run --no-default-features --color always --`)
+        Info Watching /home/sysadmin/genai-desktop-app/frontend/src-tauri for changes...
+[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 1.32s
+[1m[32m     Running[0m `target/debug/app`
