@@ -10,6 +10,65 @@ A **fully local AI desktop application** capable of analyzing and querying **sho
 
 ---
 
+## Project Summary
+
+### What Works
+1. **Frontend**
+   - Successfully supports video upload and normal chat interactions.  
+   - Chat history is stored persistently across sessions.
+
+2. **Backend**
+   - Implemented a gRPC server with a FastAPI gateway to handle chat requests.  
+   - Chat messages are stored in a PostgreSQL database and uploaded videos are stored backend.
+
+3. **AI Integration**
+   - Integrated Google ADK with MCP tools to perform multiple AI tasks locally:
+     - Summarize chat history and export it as a PDF.  
+     - Analyze uploaded videos.  
+     - Transcribe video content using Whisper.  
+     - Generate PowerPoint slides from AI summaries.
+
+---
+
+### What Doesn’t Work / Current Limitations
+1. **Model Performance**
+   - OpenVINO LLMs cannot run effectively due to insufficient computational power on Comet Lake hardware.  
+   - Only models below 2B parameters can run, which tend to hallucinate and produce unreliable outputs.
+
+2. **Presentation Generation**
+   - PowerPoint slide creation is inconsistent — some slides have missing or incorrect titles and content.
+
+---
+
+### Encountered Challenges
+1. **Hardware Constraints**
+   - OpenVINO LLM inference requires higher computational resources than available on Comet Lake.  
+   - Attempts to use Intel IPEX-LLM and Ollama-based solutions also failed to achieve stable inference performance on the same hardware.
+
+2. **Model Quality**
+   - Smaller models (<2B) often struggle with factual accuracy and coherence, limiting practical use for summarization or content generation.
+
+---
+
+### Potential Improvements
+1. **Frontend**
+   - Introduce a **session-based chat structure** (like ChatGPT) instead of storing all chat history as one continuous log.
+
+2. **Backend**
+   - Simplify the pipeline by removing the FastAPI gateway layer for faster gRPC-only communication.  
+   - Add asynchronous job handling for large AI tasks (video processing, PPT generation).
+
+3. **AI/Model Enhancements**
+   - Upgrade hardware to support **OpenVINO-powered LLMs** or deploy them on a **remote inference server**.  
+   - Improve PowerPoint generation logic for more structured and reliable outputs.
+
+4. **Scalability**
+   - Add Docker Compose or Kubernetes orchestration for better multi-service management and reproducibility.
+
+
+
+---
+
 ## Prerequisites
 
 - **Operating System:** Ubuntu 22.04 or 24.10  
