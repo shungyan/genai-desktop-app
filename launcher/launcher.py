@@ -29,7 +29,7 @@ def wait_for_port(port, name):
 
 def run_background(command, cwd, log_file):
     """Run a command in the background and log its output."""
-    with open(log_file, "a") as log:
+    with open(log_file, "w") as log:
         process = subprocess.Popen(
             command,
             shell=True,
@@ -42,34 +42,39 @@ def run_background(command, cwd, log_file):
 
 
 def main():
-
     # === 2. Whisper Server ===
     print("Starting Whisper Server...")
     whisper_dir = os.path.join(BASE_DIR, "openvino", "whisper")
-    run_background("uv run app.py", whisper_dir, os.path.join(LOG_DIR, "whisper.log"))
+    command = f"{os.path.join(whisper_dir, '.venv', 'Scripts', 'activate')} && uv run app.py"
+    run_background(command, whisper_dir, os.path.join(LOG_DIR, "whisper.log"))
     wait_for_port(4896, "Whisper Server")
 
     # === 3. ADK Server ===
     print("Starting ADK Server...")
     adk_dir = os.path.join(BASE_DIR, "agent")
-    run_background("uv run adk web", adk_dir, os.path.join(LOG_DIR, "adk.log"))
+    command = f"{os.path.join(adk_dir, '.venv', 'Scripts', 'activate')} && uv run adk web"
+    run_background(command, adk_dir, os.path.join(LOG_DIR, "adk.log"))
     wait_for_port(8000, "ADK Server")
 
     # === 4. MCP Server ===
     print("Starting MCP Server...")
-    mcp_dir = os.path.join(adk_dir, "mcp")
-    run_background("uv run server.py", mcp_dir, os.path.join(LOG_DIR, "mcp.log"))
+    mcp_dir = os.path.join(BASE_DIR, "agent")
+    print(mcp_dir)
+    command = f"{os.path.join(mcp_dir, '.venv', 'Scripts', 'activate')} && cd mcp && uv run server.py"
+    run_background(command, mcp_dir, os.path.join(LOG_DIR, "mcp.log"))
     wait_for_port(6969, "MCP Server")
 
     # === 5. gRPC Server ===
     print("Starting gRPC Server...")
     backend_dir = os.path.join(BASE_DIR, "backend")
-    run_background("uv run grpc_server.py", backend_dir, os.path.join(LOG_DIR, "grpc.log"))
+    command = f"{os.path.join(backend_dir, '.venv', 'Scripts', 'activate')} && uv run grpc_server.py"
+    run_background(command, backend_dir, os.path.join(LOG_DIR, "grpc.log"))
     wait_for_port(50051, "gRPC Server")
 
     # === 6. gRPC Gateway ===
     print("Starting gRPC Gateway...")
-    run_background("uv run gateway.py", backend_dir, os.path.join(LOG_DIR, "gateway.log"))
+    command = f"{os.path.join(backend_dir, '.venv', 'Scripts', 'activate')} && uv run gateway.py"
+    run_background(command, backend_dir, os.path.join(LOG_DIR, "gateway.log"))
     wait_for_port(1234, "gRPC Gateway")
 
     # === 7. Frontend ===

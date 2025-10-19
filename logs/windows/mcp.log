@@ -1,39 +1,152 @@
-INFO:     Started server process [21432]
+INFO:     Started server process [7336]
 INFO:     Waiting for application startup.
 StreamableHTTP session manager started
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://localhost:6969 (Press CTRL+C to quit)
+Created new transport with session ID: 9f8bcd00e92e4520bdea026eaaee9c90
+INFO:     ::1:59063 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     ::1:59064 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     ::1:59065 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     ::1:59066 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:59075 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:59076 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+INFO:     ::1:59077 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:59080 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:59081 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:59093 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:54735 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:51487 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:51493 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+Created new transport with session ID: b8c7d9d8472e4fc1a71a1985c4881085
+INFO:     ::1:51494 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     ::1:51495 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     ::1:51496 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     ::1:51497 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:51505 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:51506 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:51508 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:51511 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:51512 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:51519 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:49387 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:56137 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:56144 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+Created new transport with session ID: 4685d731e4c74e428c9932f1e6d19fe2
+INFO:     ::1:56145 - "POST /mcp HTTP/1.1" 200 OK
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:56146 - "POST /mcp HTTP/1.1" 202 Accepted
+INFO:     ::1:56147 - "GET /mcp HTTP/1.1" 200 OK
+INFO:     ::1:56148 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:49411 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+INFO:     ::1:49412 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type CallToolRequest
+extracting....
+done
+INFO:     ::1:49440 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+INFO:     ::1:49476 - "POST /mcp HTTP/1.1" 200 OK
+Processing request of type ListToolsRequest
+Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
 INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-StreamableHTTP session manager shutting down
-INFO:     Application shutdown complete.
-INFO:     Finished server process [21432]
-Server shutting down gracefully...
-Server has been shut down.
-Thank you for using MCP Server!
-INFO:     Started server process [14960]
-INFO:     Waiting for application startup.
-StreamableHTTP session manager started
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://localhost:6969 (Press CTRL+C to quit)
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-StreamableHTTP session manager shutting down
-INFO:     Application shutdown complete.
-INFO:     Finished server process [14960]
-Server shutting down gracefully...
-Server has been shut down.
-Thank you for using MCP Server!
-INFO:     Started server process [21404]
-INFO:     Waiting for application startup.
-StreamableHTTP session manager started
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://localhost:6969 (Press CTRL+C to quit)
-INFO:     Shutting down
-INFO:     Waiting for application shutdown.
-StreamableHTTP session manager shutting down
-INFO:     Application shutdown complete.
-INFO:     Finished server process [21404]
-Server shutting down gracefully...
-Server has been shut down.
-Thank you for using MCP Server!
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+^C

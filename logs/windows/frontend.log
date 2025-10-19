@@ -8,53 +8,11 @@
 > vite
 
 
-  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m395[22m[2m[0m ms[22m
+  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m158[22m[2m[0m ms[22m
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
      Running DevCommand (`cargo  run --no-default-features --color always --`)
         Info Watching C:\Users\User\Desktop\genai-desktop-app\frontend\src-tauri for changes...
-[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 14.18s
+[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.27s
 [1m[32m     Running[0m `target\debug\app.exe`
-[1019/162429.012:ERROR:ui\gfx\win\window_impl.cc:124] Failed to unregister class Chrome_WidgetWin_0. Error = 1411
-Terminate batch job (Y/N)? Terminate batch job (Y/N)? [1m[31merror[0m[1m:[0m process didn't exit successfully: `target\debug\app.exe` (exit code: 0xc000013a, STATUS_CONTROL_C_EXIT)
-
-^C
-> my-tauri-app@0.0.0 tauri
-> tauri dev
-
-     Running BeforeDevCommand (`npm run dev`)
-
-> my-tauri-app@0.0.0 dev
-> vite
-
-
-  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m154[22m[2m[0m ms[22m
-
-  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
-[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
-     Running DevCommand (`cargo  run --no-default-features --color always --`)
-        Info Watching C:\Users\User\Desktop\genai-desktop-app\frontend\src-tauri for changes...
-[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.86s
-[1m[32m     Running[0m `target\debug\app.exe`
-[1m[31merror[0m[1m:[0m process didn't exit successfully: `target\debug\app.exe` (exit code: 0xc000013a, STATUS_CONTROL_C_EXIT)
-Terminate batch job (Y/N)? Terminate batch job (Y/N)? 
- my-tauri-app@0.0.0 tauri
-> tauri dev
-
-     Running BeforeDevCommand (`npm run dev`)
-
-> my-tauri-app@0.0.0 dev
-> vite
-
-
-  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m155[22m[2m[0m ms[22m
-
-  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
-[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
-     Running DevCommand (`cargo  run --no-default-features --color always --`)
-        Info Watching C:\Users\User\Desktop\genai-desktop-app\frontend\src-tauri for changes...
-[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
-[1m[32m     Running[0m `target\debug\app.exe`
-Terminate batch job (Y/N)? [1m[31merror[0m[1m:[0m process didn't exit successfully: `target\debug\app.exe` (exit code: 0xc000013a, STATUS_CONTROL_C_EXIT)
-Terminate batch job (Y/N)? ^CTerminate batch job (Y/N)? ^CTerminate batch job (Y/N)? ^CTerminate batch job (Y/N)? ^CTerminate batch job (Y/N)? ^C
