@@ -46,8 +46,6 @@ Transcription: Openvino Whisper
 2. **Presentation Generation**
    - PowerPoint slide creation is inconsistent — some slides have missing or incorrect titles and content.
 
-3. **Python packaged executable**
-   - Unable to fix error from Python launcher executable created by Pyinstaller. 
 
 ---
 
@@ -143,9 +141,7 @@ Then start everything:
 
 Run on Windows:
 ```bash
-cd launcher
-uv venv
-uv run launcher.py
+launcher.exe
 ```
 
 ## To run with Openvino LLM 
@@ -208,5 +204,6 @@ genai-desktop/
 
 Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
 As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU + Ollama to ensure functional verification of the AI components.
+
 
 
