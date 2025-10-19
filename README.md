@@ -83,39 +83,12 @@ Transcription: Openvino Whisper
 ## Prerequisites
 
 - **Operating System:** Ubuntu 22.04 or 24.10  
-- **Hardware:** Intel Platform (Meteor Lake and above) / Nvidia GPU
+- **Hardware:** Intel Platform (Meteor Lake and above) / Nvidia GPU  
 - **Package Manager:** [uv](https://github.com/astral-sh/uv) — Python package & virtual environment manager  
-
-Install `uv`:
-Linux:
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-Windows:
-```bash
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-Install `rust`:
-
-https://doc.rust-lang.org/cargo/getting-started/installation.html
-
-
-Install `nodejs`:
-
-https://nodejs.org/en/download
-
-
-Install `postgresql`:
-
-https://www.postgresql.org/download/
-
-
-Install `ollama`:
-
-https://ollama.com/download
-
-
+- **Rust:** [Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) — Required for tauri.
+- **Node.js:** [Node.js](https://nodejs.org/en/download) — Required for frontend 
+- **PostgreSQL:** [PostgreSQL](https://www.postgresql.org/download/) — Relational database system, used for storing chat history.  
+- **Ollama:** [Ollama](https://ollama.com/download) — Local AI model serving tool for running LLMs.  
 
 ## Getting Started
 
