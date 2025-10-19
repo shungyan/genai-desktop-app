@@ -46,6 +46,9 @@ Transcription: Openvino Whisper
 2. **Presentation Generation**
    - PowerPoint slide creation is inconsistent — some slides have missing or incorrect titles and content.
 
+3. **Python packaged executable**
+   - Unable to fix error from Python launcher executable created by Pyinstaller. 
+
 ---
 
 ### Encountered Challenges
@@ -72,7 +75,7 @@ Transcription: Openvino Whisper
 
 4. **Scalability**
    - Add Docker Compose or Kubernetes orchestration for better multi-service management and reproducibility.
-
+   - Create a Python executable with C# launcher
 
 
 ---
