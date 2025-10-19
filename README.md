@@ -207,5 +207,6 @@ genai-desktop/
 ## Disclaimer
 
 Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
-As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU to ensure functional verification of the AI components.
+As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU + Ollama to ensure functional verification of the AI components.
+
 
