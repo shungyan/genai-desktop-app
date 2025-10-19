@@ -108,6 +108,12 @@ Install `postgresql`:
 https://www.postgresql.org/download/
 
 
+Install `ollama`:
+
+https://ollama.com/download
+
+
+
 ## Getting Started
 
 ### 1. Clone the repository
@@ -147,6 +153,8 @@ uv pip install -r requirements.txt
 
 ### 6. Run the Whole Application
 
+Run on Linux:
+
 Make sure your run.sh file is executable:
 ```bash
 chmod +x run.sh
@@ -156,6 +164,43 @@ Then start everything:
 ```bash
 ./run.sh
 ```
+
+Run on Windows:
+```bash
+cd launcher
+uv venv
+uv run launcher.py
+```
+
+## To run with Openvino LLM 
+
+### 1. Setup Openvino LLM server
+```bash
+cd openvino/llm server
+uv run main.py
+```
+
+### 2. Setup agents for Openvino LLM
+```bash
+cd agent
+uv pip install -r requirements.txt
+uv run adk web
+cd mcp
+uv run server.py
+```
+
+### 3. Run the rest of the components
+```bash
+cd backend 
+uv pip install -r requirements.txt
+uv run gateway.py
+uv run grpc.py
+
+cd frontend
+npm install 
+npm run tauri dev
+```
+
 
 ## 🧩 Features
 

@@ -1,0 +1,93 @@
+[2025-10-19 11:54:15.938389] USER: hello
+[2025-10-19 11:54:51.325462] LLM: Hello! How can I assist you today? If you have any questions or need help with something, feel free to ask! 😊
+[2025-10-19 11:55:37.758325] USER: transcribe video
+[2025-10-19 11:56:01.831989] LLM: The transcription tool is currently unavailable due to a connection error. Would you like me to assist with something else instead?
+[2025-10-19 12:18:54.969550] USER: analyze video
+[2025-10-19 12:20:27.166977] LLM: The video analysis has been completed. Here's the summary:
+
+The video shows a professional television studio environment, likely during the production of an interview or news segment on CNBC. Key details include:
+- A semi-circular desk with modern tech equipment (digital displays, computers, microphones)
+- Multiple participants: one speaking directly to the camera, another in conversation, and a third seated opposite
+- Urban street scene backdrop with city lights reflecting off building glass
+- Text overlay "THE AI GOLD RUSH ERA" and mention of NVIDIA CEO Jensen Huang on Squawk Box
+- High-energy atmosphere of business news discourse in a NYC vantage point
+
+Would you like me to create PowerPoint slides based on these key points?
+[2025-10-19 12:20:43.666427] USER: can you summarize chat history
+[2025-10-19 12:21:06.914849] LLM: The summary has been successfully saved to the specified PDF path: **summary_20251019_122101.pdf**.
+[2025-10-19 12:22:23.907997] USER: can you create ppt slides
+[2025-10-19 12:23:30.982948] LLM: The PowerPoint presentation "AI_Innovation_Presentation.pptx" has been successfully saved with the following slides:  
+1. **Global AI Investment and Innovation**  
+2. **Global AI Spending Projections**  
+   - Projected to reach **$1.5 trillion** this year  
+   - Could surpass **$2 trillion** by 2026  
+3. **Invidia's Leadership in AI Innovation**  
+   - Jensen Wong, CEO of Invidia  
+   - Company market cap: **$4.5 trillion** (world’s most valuable)  
+   - Key player driving AI innovation  
+4. **Summary**  
+   - Global AI investment is surging, with projections of **$1.5 trillion** this year and **$2 trillion** by 2026.  
+   - Jensen Wong, CEO of Invidia (market cap: **$4.5 trillion**), highlights the company’s role as a leader in AI innovation.  
+
+Let me know if you need further adjustments! 📁✨
+[2025-10-19 14:09:54.135670] USER: hello
+[2025-10-19 14:10:10.495563] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 14:25:07.904511] USER: hello
+[2025-10-19 14:25:25.371776] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 14:39:19.631611] USER: hello
+[2025-10-19 14:40:03.450680] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 14:55:12.182869] USER: hello
+[2025-10-19 14:55:33.405179] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 14:58:31.311013] USER: hello
+[2025-10-19 14:58:44.930051] LLM: Hello again! How can I assist you today? 😊
+[2025-10-19 15:03:45.857817] USER: hello
+[2025-10-19 15:04:06.801283] LLM: Hello! How can I assist you today?
+[2025-10-19 15:14:18.313850] USER: hello
+[2025-10-19 15:15:04.620381] LLM: Hello again! How can I assist you today?
+[2025-10-19 15:15:36.856230] USER: hello
+[2025-10-19 15:15:45.854804] LLM: Hello once more! How can I assist you today?
+[2025-10-19 15:16:11.290143] USER: hello
+[2025-10-19 15:16:20.312236] LLM: Hello! 😊 How can I assist you today?
+[2025-10-19 15:23:48.325179] USER: hello
+[2025-10-19 15:24:08.413727] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 15:31:32.771448] USER: hello
+[2025-10-19 15:31:48.243695] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 15:37:15.543214] USER: hello
+[2025-10-19 15:37:43.562926] LLM: Hello! How can I assist you today? If you have any questions or need help with something, feel free to ask! 😊
+[2025-10-19 15:48:48.881549] USER: test 
+[2025-10-19 15:49:11.432725] LLM: The message "test /think" seems to be a placeholder or a test input. Since there is no specific request or question, I'll acknowledge your message and ask how I can assist you. Let me know if you have any questions or need help with something specific!
+[2025-10-19 15:49:36.882036] USER: tell me what you can do?
+[2025-10-19 15:49:45.146013] LLM: I can assist with coordinating greetings and tasks, and I have access to several specialized agents to help with specific requests. Here's what I can do:
+
+1. **Greet users** (via the Greeter agent).  
+2. **Summarize chat history** (via the summarizer agent).  
+3. **Analyze videos** (via the video_analyst agent).  
+4. **Transcribe video content** (via the transcribe_agent agent).  
+5. **Create PowerPoint slides** from key points (via the ppt_slides_agent agent).  
+
+If you have a specific task or question, just let me know, and I’ll handle it! 😊
+[2025-10-19 16:05:48.400060] USER: hello
+[2025-10-19 16:06:10.014822] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 16:07:33.116558] USER: Hello
+[2025-10-19 16:07:38.636070] LLM: Hello again! 😊 How can I assist you today? Let me know if you have any questions or need help with something!
+[2025-10-19 16:29:30.521587] USER: Hello
+[2025-10-19 16:29:41.505712] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 16:31:00.372603] USER: Hello
+[2025-10-19 16:31:16.638661] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 16:33:21.815036] USER: hello
+[2025-10-19 16:33:27.342083] LLM: Hello again! How can I assist you today? 😊
+[2025-10-19 16:33:36.479113] USER: test
+[2025-10-19 16:33:43.419506] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 16:36:29.841687] USER: Hello
+[2025-10-19 16:36:46.724452] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 16:36:52.402289] USER: hello
+[2025-10-19 16:36:58.287646] LLM: Hello again! 😊 How can I assist you today? If you have any questions or need help with something, feel free to ask!
+[2025-10-19 17:46:06.930695] USER: hello
+[2025-10-19 17:47:50.133555] LLM: Hello! How can I assist you today? 😊
+[2025-10-19 17:48:07.799243] USER: can you transcribe video
+[2025-10-19 17:48:20.001822] LLM: The video file was not found. Please upload the video file so I can proceed with the transcription.
+[2025-10-19 17:53:38.149322] USER: can you transcribe the video
+[2025-10-19 17:54:40.660009] LLM: The video has been transcribed. Here is the transcription:
+
+"Global spending on AI is projected to reach nearly one and a half trillion dollars this year and it could top two trillion dollars in 2026. Joining us right now is one of if not the key player that's been driving innovation in the field, Jensen Wong. He is the CEO of Invidia. It's got a market cap of four and a half trillion dollars, makes it the world's most valuable company, and Jensen, it is a pleasure to have you here on set. So happy to be here."
+[2025-10-19 17:55:02.945968] USER: can you summarize chat history
