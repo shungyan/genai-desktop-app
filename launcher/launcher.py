@@ -2,14 +2,21 @@ import os
 import subprocess
 import socket
 import time
+import sys
 
 
 # === CONFIG ===
-# Current file directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
+def get_base_path():
+    # If running as executable (PyInstaller), use the executable's directory; otherwise, use script directory
+    if hasattr(sys, '_MEIPASS'):
+        # For executable, use the directory containing the .exe
+        return os.path.dirname(sys.executable)
+    else:
+        # For script, use one level up from script directory
+        return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Go one level up
-BASE_DIR = os.path.dirname(current_dir)
+BASE_DIR = get_base_path()
+
 LOG_DIR = os.path.join(BASE_DIR, "logs/windows")
 os.makedirs(LOG_DIR, exist_ok=True)
 
@@ -29,6 +36,8 @@ def wait_for_port(port, name):
 
 def run_background(command, cwd, log_file):
     """Run a command in the background and log its output."""
+    if not os.path.exists(cwd):
+        raise FileNotFoundError(f"cwd does not exist: {cwd}")
     with open(log_file, "w") as log:
         process = subprocess.Popen(
             command,
@@ -45,8 +54,7 @@ def main():
     # === 2. Whisper Server ===
     print("Starting Whisper Server...")
     whisper_dir = os.path.join(BASE_DIR, "openvino", "whisper")
-    command = f"{os.path.join(whisper_dir, '.venv', 'Scripts', 'activate')} && uv run app.py"
-    run_background(command, whisper_dir, os.path.join(LOG_DIR, "whisper.log"))
+    run_background("uv run app.py", whisper_dir, os.path.join(LOG_DIR, "whisper.log"))
     wait_for_port(4896, "Whisper Server")
 
     # === 3. ADK Server ===

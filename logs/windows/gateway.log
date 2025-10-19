@@ -1,14 +1,16 @@
-INFO:     Started server process [15272]
+INFO:     Started server process [17520]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:1234 (Press CTRL+C to quit)
-INFO:     127.0.0.1:63143 - "GET /history HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63143 - "GET /history HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49349 - "OPTIONS /chat HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49349 - "POST /chat HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60914 - "POST /chat HTTP/1.1" 200 OK
-INFO:     127.0.0.1:56069 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56225 - "GET /history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56225 - "GET /history HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54249 - "OPTIONS /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54249 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62591 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56360 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64347 - "POST /chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49785 - "POST /chat HTTP/1.1" 200 OK
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [15272]
+INFO:     Finished server process [17520]
