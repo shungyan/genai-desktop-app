@@ -1,0 +1,205 @@
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\fast_api.py:179: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\auth\credential_service\in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [19780]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-10-19 16:05:25,549 - INFO - adk_web_server.py:749 - New session created: s_123
+INFO:     127.0.0.1:64519 - "POST /apps/agent/users/u_123/sessions/s_123 HTTP/1.1" 200 OK
+2025-10-19 16:05:54,563 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:05:54,564 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:05:57,234 - INFO - agent_loader.py:126 - Found root_agent in agent.agent
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\adk_web_server.py:475: UserWarning: [EXPERIMENTAL] App: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  agentic_app = App(
+[92m16:05:57 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:05:57,251 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+INFO:     127.0.0.1:55481 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55481 - "GET /dev-ui/ HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55481 - "GET /dev-ui/chunk-EQDQRRRY.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59825 - "GET /dev-ui/polyfills-B6TNHZQ6.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:55481 - "GET /dev-ui/main-W7QZBYAR.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59825 - "GET /dev-ui/styles-4VDSPQ37.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59825 - "GET /dev-ui/assets/config/runtime-config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59825 - "GET /dev-ui/assets/ADK-512-color.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:59825 - "GET /list-apps?relative_path=./ HTTP/1.1" 200 OK
+[92m16:06:08 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:06:08,665 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+INFO:     127.0.0.1:56406 - "GET /apps/agent/eval_sets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49159 - "GET /apps/agent/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55247 - "POST /apps/agent/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62983 - "GET /apps/agent/eval_results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62983 - "GET /apps/agent/users/user/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62983 - "POST /run_sse HTTP/1.1" 200 OK
+[92m16:06:08 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:06:08,996 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:06:10,012 - INFO - adk_web_server.py:1364 - Generated 3 events in agent run
+INFO:     127.0.0.1:55812 - "POST /run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55247 - "GET /debug/trace/session/02db3578-0174-4199-83bf-8f3eca51a1a2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62983 - "GET /apps/agent/users/user/sessions/02db3578-0174-4199-83bf-8f3eca51a1a2 HTTP/1.1" 200 OK
+[92m16:07:35 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:07:35,134 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:07:38,634 - INFO - adk_web_server.py:1364 - Generated 1 events in agent run
+INFO:     127.0.0.1:65168 - "POST /run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50332 - "POST /run HTTP/1.1" 422 Unprocessable Entity
+[92m16:09:14 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:09:14,539 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:09:18,609 - INFO - adk_web_server.py:1364 - Generated 1 events in agent run
+INFO:     127.0.0.1:50344 - "POST /run HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server shutting down...                                             |
++-----------------------------------------------------------------------------+
+
+2025-10-19 16:24:29,147 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:24:29,147 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:24:29,148 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+INFO:     Application shutdown complete.
+INFO:     Finished server process [19780]
+
+Aborted!
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\fast_api.py:179: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\auth\credential_service\in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [3032]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-10-19 16:30:56,483 - INFO - adk_web_server.py:749 - New session created: s_123
+INFO:     127.0.0.1:56013 - "POST /apps/agent/users/u_123/sessions/s_123 HTTP/1.1" 200 OK
+2025-10-19 16:31:08,031 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:31:08,031 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:31:10,741 - INFO - agent_loader.py:126 - Found root_agent in agent.agent
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\adk_web_server.py:475: UserWarning: [EXPERIMENTAL] App: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  agentic_app = App(
+[92m16:31:10 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:31:10,751 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+[92m16:31:15 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:31:15,326 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:31:16,636 - INFO - adk_web_server.py:1364 - Generated 3 events in agent run
+INFO:     127.0.0.1:55934 - "POST /run HTTP/1.1" 200 OK
+[92m16:33:23 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:33:23,840 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:33:27,340 - INFO - adk_web_server.py:1364 - Generated 1 events in agent run
+INFO:     127.0.0.1:53382 - "POST /run HTTP/1.1" 200 OK
+[92m16:33:38 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:33:38,512 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:33:43,417 - INFO - adk_web_server.py:1364 - Generated 1 events in agent run
+INFO:     127.0.0.1:53397 - "POST /run HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server shutting down...                                             |
++-----------------------------------------------------------------------------+
+
+2025-10-19 16:35:46,179 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:35:46,179 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:35:46,179 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:35:46,179 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:35:46,179 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:35:46,179 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:35:46,180 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:35:46,180 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3032]
+
+Aborted!
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\fast_api.py:179: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\auth\credential_service\in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+INFO:     Started server process [21904]
+INFO:     Waiting for application startup.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server started                                                      |
+|                                                                             |
+| For local testing, access at http://127.0.0.1:8000.                         |
++-----------------------------------------------------------------------------+
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-10-19 16:36:26,791 - INFO - adk_web_server.py:749 - New session created: s_123
+INFO:     127.0.0.1:61328 - "POST /apps/agent/users/u_123/sessions/s_123 HTTP/1.1" 200 OK
+2025-10-19 16:36:38,358 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:36:38,358 - INFO - envs.py:54 - No .env file found for agent
+2025-10-19 16:36:40,892 - INFO - agent_loader.py:126 - Found root_agent in agent.agent
+C:\Users\User\Desktop\genai-desktop-app\agent\.venv\Lib\site-packages\google\adk\cli\adk_web_server.py:475: UserWarning: [EXPERIMENTAL] App: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  agentic_app = App(
+[92m16:36:40 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:36:40,903 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+[92m16:36:45 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:36:45,461 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:36:46,722 - INFO - adk_web_server.py:1364 - Generated 3 events in agent run
+INFO:     127.0.0.1:50381 - "POST /run HTTP/1.1" 200 OK
+[92m16:36:54 - LiteLLM:INFO[0m: utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:36:54,425 - INFO - utils.py:3388 - 
+LiteLLM completion() model= qwen3:8b; provider = ollama_chat
+2025-10-19 16:36:58,285 - INFO - adk_web_server.py:1364 - Generated 1 events in agent run
+INFO:     127.0.0.1:55644 - "POST /run HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+
++-----------------------------------------------------------------------------+
+| ADK Web Server shutting down...                                             |
++-----------------------------------------------------------------------------+
+
+2025-10-19 16:39:13,439 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:39:13,439 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:39:13,439 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:39:13,439 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:39:13,439 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:39:13,440 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+2025-10-19 16:39:13,440 - INFO - runners.py:1027 - Closing toolset: MCPToolset
+2025-10-19 16:39:13,440 - INFO - runners.py:1030 - Successfully closed toolset: MCPToolset
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21904]
+
+Aborted!

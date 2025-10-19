@@ -1,0 +1,43 @@
+Session created successfully.
+gRPC backend running on port 50051
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 147, in <module>
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 144, in serve
+    serve()
+    ^^^^^^^^
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_server.py", line 1502, in wait_for_termination
+    return _common.wait(
+           ^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^CSession created successfully.
+gRPC backend running on port 50051
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 144, in <module>
+    serve()
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 141, in serve
+    server.wait_for_termination()
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_server.py", line 1502, in wait_for_termination
+    return _common.wait(
+           ^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 156, in wait
+    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 116, in _wait_once
+    wait_fn(timeout=timeout)
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C

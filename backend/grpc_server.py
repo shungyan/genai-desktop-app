@@ -4,6 +4,7 @@ import psycopg2
 import chat_pb2
 import chat_pb2_grpc
 import requests
+from grpc_reflection.v1alpha import reflection
 
 def create_session():
     url_session = "http://localhost:8000/apps/agent/users/u_123/sessions/s_123"
@@ -83,10 +84,7 @@ class ChatService(chat_pb2_grpc.ChatServiceServicer):
             ("llm", llm_reply_text)
         )
         conn.commit()
-
-        print(llm_reply)
-        print(llm_reply_text)
-
+        
         # Return ChatReply to FastAPI
         return chat_pb2.ChatReply(reply=str(llm_reply_text))
 
@@ -128,6 +126,15 @@ def serve():
         ]
     )
     chat_pb2_grpc.add_ChatServiceServicer_to_server(ChatService(), server)
+
+    # Enable reflection
+    SERVICE_NAMES = (
+        chat_pb2.DESCRIPTOR.services_by_name['ChatService'].full_name,
+        reflection.SERVICE_NAME,
+    )
+    reflection.enable_server_reflection(SERVICE_NAMES, server)
+
+
     server.add_insecure_port("[::]:50051")
     print("gRPC backend running on port 50051")
     server.start()
