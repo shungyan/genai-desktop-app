@@ -72,21 +72,35 @@ A **fully local AI desktop application** capable of analyzing and querying **sho
 ## Prerequisites
 
 - **Operating System:** Ubuntu 22.04 or 24.10  
-- **Hardware:** Intel Platform (Meteor Lake and above)  
+- **Hardware:** Intel Platform (Meteor Lake and above) / Nvidia GPU
 - **Package Manager:** [uv](https://github.com/astral-sh/uv) — Python package & virtual environment manager  
 
 Install `uv`:
-
+Linux:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+Windows:
+```bash
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Install `rust`:
+https://doc.rust-lang.org/cargo/getting-started/installation.html
+
+Install `nodejs`:
+https://nodejs.org/en/download
+
+Install `postgresql`:
+https://www.postgresql.org/download/
+
 
 ## Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/genai-desktop.git
+git clone https://github.com/shungyan/genai-desktop-app.git
 cd genai-desktop
 ```
 
