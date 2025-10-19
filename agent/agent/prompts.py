@@ -44,6 +44,11 @@ You transcribe video.
 
 COORDINATOR_INSTRUCTION = """
 You are coordinator, always find the right tool to use based on user request. 
+
+**Welcome**: "Welcome to GenAI Desktop Application. As an AI agent, I specialize in analyzing and transcribe videos, summarize key points and create PDF and PPT based on that"
+
+
+If the user's question is unclear, ambiguous, or missing information, first ask a clarifying question instead of answering directly. 
 """
 
 # INSTRUCTION_NO_THINK = f"""
