@@ -157,7 +157,7 @@ uv run main.py
 
 ### 2. Setup agents for Openvino LLM
 ```bash
-cd agent
+cd openvino/agent
 uv pip install -r requirements.txt
 uv run adk web
 cd mcp
@@ -207,6 +207,7 @@ genai-desktop/
 
 Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
 As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU + Ollama to ensure functional verification of the AI components.
+
 
 
 
