@@ -34,7 +34,10 @@ Transcription: Openvino Whisper
      - Summarize chat history and export it as a PDF.  
      - Analyze uploaded videos.  
      - Transcribe video content using Whisper.  
-     - Generate PowerPoint slides from AI summaries.
+     - Generate PowerPoint slides from video transcript.
+    
+4. **C# Launcher**
+   - Able to run the whole application using C# Launcher
 
 ---
 
@@ -45,7 +48,6 @@ Transcription: Openvino Whisper
 
 2. **Presentation Generation**
    - PowerPoint slide creation is inconsistent — some slides have missing or incorrect titles and content.
-
 
 ---
 
@@ -70,6 +72,7 @@ Transcription: Openvino Whisper
 3. **AI/Model Enhancements**
    - Upgrade hardware to support **OpenVINO-powered LLMs**.
    - Improve PowerPoint generation logic for more structured and reliable outputs.
+   - Improve agents to handle flexible, user-defined tasks instead of fixed files.
 
 4. **Scalability**
    - Add Docker Compose or Kubernetes orchestration for better multi-service management and reproducibility.
@@ -141,7 +144,8 @@ Then start everything:
 
 Run on Windows:
 ```bash
-launcher.exe
+cd C#Launcher
+dotnet run
 ```
 
 ## To run with Openvino LLM 
@@ -204,6 +208,7 @@ genai-desktop/
 
 Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
 As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU + Ollama to ensure functional verification of the AI components.
+
 
 
 
