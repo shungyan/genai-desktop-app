@@ -1,0 +1,11 @@
+No CUDA runtime is found, using CUDA_HOME='C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9'
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|##########| 5/5 [00:00<?, ?it/s]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\User\\Desktop\\genai-desktop-app\\openvino\\whisper']
+INFO:     Uvicorn running on http://0.0.0.0:4896 (Press CTRL+C to quit)
+INFO:     Started reloader process [10432] using StatReload
+No CUDA runtime is found, using CUDA_HOME='C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9'
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|##########| 5/5 [00:00<?, ?it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|##########| 5/5 [00:00<00:00, 4997.98it/s]
+INFO:     Started server process [5384]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

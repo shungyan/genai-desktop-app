@@ -7,11 +7,11 @@ import torch
 
 
 # Initialize FastAPI app
-app = FastAPI(title="OpenVINO LLM API")
+app = FastAPI(title="OpenVINO VLM API")
 
 # Load OpenVINO model & tokenizer
 # model_id = "OpenVINO/qwen3-1.7b-fp16-ov"
-model_id = "OpenVINO/Qwen3-8B-fp16-ov"
+model_id = "OpenVINO/Phi-3.5-vision-instruct-int4-ov"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = OVModelForCausalLM.from_pretrained(model_id)
 
@@ -86,4 +86,4 @@ async def chat_completions(request: OpenAIChatRequest):
 # Entry point
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=5678)
+    uvicorn.run(app, host="0.0.0.0", port=8765)
