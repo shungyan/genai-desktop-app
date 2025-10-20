@@ -21,16 +21,28 @@ LOG_DIR = os.path.join(BASE_DIR, "logs/windows")
 os.makedirs(LOG_DIR, exist_ok=True)
 
 
+# def wait_for_port(port, name):
+#     """Wait until a given port on localhost is open."""
+#     print(f"Waiting for {name} to start on port {port}...")
+#     while True:
+#         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+#             sock.settimeout(1)
+#             result = sock.connect_ex(("localhost", port))
+#             if result == 0:
+#                 print(f"{name} is up!")
+#                 break
+#         time.sleep(1)
+
 def wait_for_port(port, name):
-    """Wait until a given port on localhost is open."""
     print(f"Waiting for {name} to start on port {port}...")
     while True:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.settimeout(1)
-            result = sock.connect_ex(("localhost", port))
-            if result == 0:
-                print(f"{name} is up!")
-                break
+        for host in ("localhost", "127.0.0.1", "::1"):
+            try:
+                with socket.create_connection((host, port), timeout=1):
+                    print(f"{name} is up on {host}:{port}!")
+                    return
+            except Exception:
+                continue
         time.sleep(1)
 
 
@@ -88,7 +100,7 @@ def main():
     # === 7. Frontend ===
     print("Starting Frontend...")
     frontend_dir = os.path.join(BASE_DIR, "frontend")
-    run_background("npm run tauri dev", frontend_dir, os.path.join(LOG_DIR, "frontend.log"))
+    run_background("npm run tauri dev --host 0.0.0.0", frontend_dir, os.path.join(LOG_DIR, "frontend.log"))
     wait_for_port(5173, "Frontend")
 
     print("All services are running successfully!")

@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.AssemblyInfo.cs
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.sourcelink.json
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\bin\Debug\net8.0\C#Launcher.exe
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\bin\Debug\net8.0\C#Launcher.deps.json
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\bin\Debug\net8.0\C#Launcher.runtimeconfig.json
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\bin\Debug\net8.0\C#Launcher.dll
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\bin\Debug\net8.0\C#Launcher.pdb
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.dll
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\refint\C#Launcher.dll
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.pdb
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\C#Launcher.genruntimeconfig.cache
+C:\Users\User\Desktop\genai-desktop-app\C#Launcher\obj\Debug\net8.0\ref\C#Launcher.dll

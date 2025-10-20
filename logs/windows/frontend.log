@@ -1,6 +1,6 @@
 
 > my-tauri-app@0.0.0 tauri
-> tauri dev
+> tauri dev 0.0.0.0
 
      Running BeforeDevCommand (`npm run dev`)
 
@@ -8,13 +8,11 @@
 > vite
 
 
-  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m404[22m[2m[0m ms[22m
+  [32m[1mVITE[22m v7.1.9[39m  [2mready in [0m[1m186[22m[2m[0m ms[22m
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
-     Running DevCommand (`cargo  run --no-default-features --color always --`)
+     Running DevCommand (`cargo  run 0.0.0.0 --no-default-features --color always --`)
         Info Watching C:\Users\User\Desktop\genai-desktop-app\frontend\src-tauri for changes...
-[1m[32m    Finished[0m `dev` profile [unoptimized + debuginfo] target(s) in 12.24s
-[1m[32m     Running[0m `target\debug\app.exe`
-[2025-10-19][16:30:06][tao::platform_impl::platform::event_loop::runner][WARN] NewEvents emitted without explicit RedrawEventsCleared
-[2025-10-19][16:30:06][tao::platform_impl::platform::event_loop::runner][WARN] RedrawEventsCleared emitted without explicit MainEventsCleared
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.30s
+     Running `target\debug\app.exe 0.0.0.0 --no-default-features --color always --`

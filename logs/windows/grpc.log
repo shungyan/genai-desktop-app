@@ -1,22 +1,14 @@
-Session created successfully.
-gRPC backend running on port 50051
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1760930947.027516    1980 add_port.cc:83] Failed to add port to server: No address added out of total 1 resolved for '[::]:50051'
+Failed to create session. Status code: 400, response: {"detail":"Session already exists: s_123"}
 Traceback (most recent call last):
   File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 144, in <module>
     serve()
-  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 141, in serve
-    server.wait_for_termination()
-  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_server.py", line 1502, in wait_for_termination
-    return _common.wait(
-           ^^^^^^^^^^^^^
-  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 156, in wait
-    _wait_once(wait_fn, MAXIMUM_WAIT_TIMEOUT, spin_cb)
-  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 116, in _wait_once
-    wait_fn(timeout=timeout)
-  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 629, in wait
-    signaled = self._cond.wait(timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\threading.py", line 331, in wait
-    gotit = waiter.acquire(True, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-^C
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\grpc_server.py", line 138, in serve
+    server.add_insecure_port("[::]:50051")
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_server.py", line 1481, in add_insecure_port
+    return _common.validate_port_binding_result(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\genai-desktop-app\backend\.venv\Lib\site-packages\grpc\_common.py", line 181, in validate_port_binding_result
+    raise RuntimeError(_ERROR_MESSAGE_PORT_BINDING_FAILED % address)
+RuntimeError: Failed to bind to address [::]:50051; set GRPC_VERBOSITY=debug environment variable to see detailed error message.

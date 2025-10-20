@@ -63,11 +63,11 @@ ppt_slides_agent = LlmAgent(
                 url="http://localhost:6969/mcp",
             ),
             tool_filter=[
+                "generate_guideline",
                 "create_ppt",
                 "add_slide",
                 "write_text",
                 "save_ppt",
-                "generate_guideline",
             ],
         ),
     ],
