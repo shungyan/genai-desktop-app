@@ -76,7 +76,6 @@ Transcription: Openvino Whisper
 
 4. **Scalability**
    - Add Docker Compose or Kubernetes orchestration for better multi-service management and reproducibility.
-   - Create a Python executable with C# launcher
 
 
 ---
@@ -208,6 +207,7 @@ genai-desktop/
 
 Due to hardware limitations of the Intel CometLake processor, OpenVINO LLM could not be executed efficiently on the available system.  
 As a result, testing and evaluation were performed on an NVIDIA RTX 5070 GPU + Ollama to ensure functional verification of the AI components.
+
 
 
 
