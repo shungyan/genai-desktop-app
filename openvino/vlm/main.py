@@ -11,7 +11,7 @@ app = FastAPI(title="OpenVINO VLM API")
 
 # Load OpenVINO model & tokenizer
 # model_id = "OpenVINO/qwen3-1.7b-fp16-ov"
-model_id = "OpenVINO/Phi-3.5-vision-instruct-int4-ov"
+model_id = "OpenVINO/Phi-3.5-vision-instruct-fp16-ov"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = OVModelForCausalLM.from_pretrained(model_id)
 
@@ -28,30 +28,55 @@ class OpenAIChatRequest(BaseModel):
 
 # OpenAI-compatible endpoint
 @app.post("/v1/chat/completions")
+class ChatMessage(BaseModel):
+    role: str
+    content: str
+    images: Optional[str] = None  # base64-encoded image string
+
+class OpenAIChatRequest(BaseModel):
+    model: str
+    messages: List[ChatMessage]
+    temperature: Optional[float] = 0.7
+    max_tokens: Optional[int] = 256
+    stream: Optional[bool] = False
+
+
+# ----- Endpoint -----
+@app.post("/v1/chat/completions")
 async def chat_completions(request: OpenAIChatRequest):
     try:
         user_message = ""
+        image_data = None
+
+        # Extract user text and optional image
         for msg in request.messages:
-            if msg.get("role") == "user":
-                user_message = msg.get("content", "")
+            if msg.role == "user":
+                user_message = msg.content
+                if msg.images:
+                    # Decode base64 → image
+                    image_bytes = base64.b64decode(msg.images)
+                    image_data = Image.open(BytesIO(image_bytes))
                 break
 
-        if not user_message:
+        if not user_message and not image_data:
             return JSONResponse(
                 status_code=400,
-                content={"error": "No user message found"}
+                content={"error": "No user message or image found"}
             )
 
-        # Tokenize and generate
-        inputs = tokenizer(user_message, return_tensors="pt").to(device)
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=request.max_tokens,
-            temperature=request.temperature,
-        )
+        # ----- Model Inference -----
+        if image_data:
+            # VLM: process both image and text
+            inputs = processor(images=image_data, text=user_message, return_tensors="pt").to(device)
+            outputs = model.generate(**inputs, max_new_tokens=request.max_tokens, temperature=request.temperature)
+        else:
+            # Text-only model
+            inputs = tokenizer(user_message, return_tensors="pt").to(device)
+            outputs = model.generate(**inputs, max_new_tokens=request.max_tokens, temperature=request.temperature)
+
         text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-        # Format OpenAI-style response
+        # ----- OpenAI-style Response -----
         response = {
             "id": "chatcmpl-001",
             "object": "chat.completion",

@@ -68,7 +68,7 @@ def analyze_video():
     print("done")
 
     # Ollama API endpoint
-    url = "http://localhost:5678/api/chat"
+    url = "http://localhost:8765/v1/chat/completions"
     question = "summarize this image"
 
     # Prepare request payload
@@ -179,7 +179,7 @@ def summarize_chat_history():
         chat_text = f.read()
 
     # Step 2: Define Ollama API endpoint
-    url = "http://localhost:5678/api/generate"  # default Ollama API endpoint
+    url = "http://localhost:5678/v1/chat/completions"  # Openvino chat endpoint
 
     # Step 3: Define the request payload
     payload = {
@@ -370,7 +370,7 @@ def generate_guideline():
 
     # Send request to Ollama API
     response = requests.post(
-        f"{OLLAMA_HOST}/api/generate",
+        f"{OLLAMA_HOST}/v1/chat/completions",
         json={"model": MODEL, "prompt": prompt, "stream": False},
     )
 
